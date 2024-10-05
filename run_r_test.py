@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import gc
 
-index_case_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]# list for case indices, you could new indices in this list for new datasets
+index_case_list = [11]# list for case indices, you could new indices in this list for new datasets
 index_miss_list = [10, 30, 50]
 num_of_test = 100
 miss_methods = ["MCAR", "MNAR", "MAR"]

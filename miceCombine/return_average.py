@@ -5,7 +5,7 @@ from collections import Counter
 from miceCombine.return_address import return_address
 
 def return_mice_indexfile_address(miss_method, index_case, index_miss, index_file):
-    dataMainPath = os.path.join(os.getcwd(), "data_stored", "data_mice_store")
+    dataMainPath = os.path.join('/data/coml-data-imputation/shug7754', "data_stored", "data_mice_store")
     methodAddress = return_address(dataMainPath, miss_method, "method")
     caseAddress = return_address(methodAddress, str(index_case), "case")
     miceAddress = return_address(caseAddress, str(index_miss), "miss")
@@ -16,7 +16,7 @@ def return_mice_indexfile_address(miss_method, index_case, index_miss, index_fil
     return miceFilesList
 
 def return_mice_indexfile_storeadd(miss_method, index_case, index_miss, index_file):
-    dataMainPath = os.path.join(os.getcwd(), "data_stored", "data_mice")
+    dataMainPath = os.path.join('/data/coml-data-imputation/shug7754', "data_stored", "data_mice")
     if not os.path.exists(dataMainPath):
         os.mkdir(dataMainPath)
     methodPath = os.path.join(dataMainPath, miss_method)

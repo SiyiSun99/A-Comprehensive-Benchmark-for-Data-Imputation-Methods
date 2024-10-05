@@ -4,10 +4,10 @@ import pandas as pd
 from data_process.return_address import return_address
 
 def return_data_file(miss_method, index_case, index_miss, index_file):
-    fullMainPath = os.path.join(os.getcwd(), 'data_stored', 'data')
+    fullMainPath = os.path.join('/data/coml-data-imputation/shug7754', 'data_stored', 'data')
     fullFileAddress = return_address(fullMainPath, str(index_case), "full_file")
     
-    missMainPath = os.path.join(os.getcwd(), 'data_stored', 'data_miss')
+    missMainPath = os.path.join('/data/coml-data-imputation/shug7754', 'data_stored', 'data_miss')
     methodAddress = return_address(missMainPath, miss_method, "method")
     caseAddress = return_address(methodAddress, str(index_case), "case")
     missAddress = return_address(caseAddress, str(index_miss), "miss")

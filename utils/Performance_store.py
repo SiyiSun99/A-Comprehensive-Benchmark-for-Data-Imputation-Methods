@@ -52,7 +52,7 @@ class Performance_store():
     
     def storeImputed(self, data = None, df_original = None, df_miss = None):
         
-        main_path = os.path.join(os.getcwd(), 'data_stored', 'data_imputed')
+        main_path = os.path.join('/data/coml-data-imputation/shug7754', 'data_stored', 'data_imputed')
         if not os.path.exists(main_path):
             os.mkdir(main_path)
         method_path = os.path.join(main_path, self.miss_method)
